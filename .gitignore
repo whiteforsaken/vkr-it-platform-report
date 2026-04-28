@@ -5,3 +5,10 @@
 *.log
 *.toc
 *.out
+*.lof
+*.lot
+*.lop
+*.lpc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
