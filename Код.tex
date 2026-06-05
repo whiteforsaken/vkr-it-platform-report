@@ -1,31 +1,55 @@
 \appendix{Фрагменты исходного кода программы}
 
-main.tex
-\lstinputlisting[language=Tex, frame=none]{main.tex}
+\textbf{Листинг Б.1 -- Настройка серверного приложения}
+\lstinputlisting[style=jslisting]{listings/server.js}
 
-ТехПроект.tex
-\lstinputlisting[language=Tex, frame=none]{ТехПроект.tex}
+\textbf{Листинг Б.2 -- Подключение API-маршрутов программной системы}
+\lstinputlisting[style=jslisting]{listings/index.js}
+
+\textbf{Листинг Б.3 -- Реализация регистрации и авторизации пользователей}
+\lstinputlisting[style=jslisting]{listings/auth.service.js}
+
+\textbf{Листинг Б.4 -- Формирование JWT-токена и управление сессией пользователя}
+\lstinputlisting[style=jslisting]{listings/auth.controller.js}
+
+\textbf{Листинг Б.5 -- Проверка JWT-токена пользователя}
+\lstinputlisting[style=jslisting]{listings/auth.middleware.js}
+
+\textbf{Листинг Б.6 -- Разграничение доступа пользователей по ролям}
+\lstinputlisting[style=jslisting]{listings/role.middleware.js}
+
+\textbf{Листинг Б.7 -- Маршруты работы с вакансиями}
+\lstinputlisting[style=jslisting]{listings/vacancy.routes.js}
+
+\textbf{Листинг Б.8 -- Контроллер обработки запросов к вакансиям}
+\lstinputlisting[style=jslisting]{listings/vacancy.controller.js}
+
+\textbf{Листинг Б.9 -- Реализация отправки и обработки откликов}
+\lstinputlisting[style=jslisting]{listings/application.service.js}
+
+\textbf{Листинг Б.10 -- Реализация административных функций}
+\lstinputlisting[style=jslisting]{listings/admin.service.js}
 
 \ifВКР{
-\newpage
-\addcontentsline{toc}{section}{На отдельных листах (CD-RW в прикрепленном конверте)}
-\noindent
-\begin{tabular}{p{5.8cm}C{4.8cm}C{4.8cm}}
-   Автор ВКР & \lhrulefill{\fill} & \fillcenter\Автор \\
-            \setarstrut{\footnotesize}
-           & \footnotesize{(подпись, дата)} & \\
-            \restorearstrut
-   Руководитель ВКР & \lhrulefill{\fill} & \fillcenter\Руководитель \\
-            \setarstrut{\footnotesize}
-           & \footnotesize{(подпись, дата)} & \\
-            \restorearstrut
-   Нормоконтроль & \lhrulefill{\fill} & \fillcenter\Нормоконтроль \\
-            \setarstrut{\footnotesize}
-           & \footnotesize{(подпись, дата)} & \\
-            \restorearstrut
-\end{tabular}
-\vskip 2cm
-\begin{center}
-\textbf{Место для диска}
-\end{center}
+	\newpage
+	\addcontentsline{toc}{section}{На отдельных листах (CD-RW в прикрепленном конверте)}
+	\noindent
+	\begin{tabular}{p{5.8cm}C{4.8cm}C{4.8cm}}
+		Автор ВКР & \lhrulefill{\fill} & \fillcenter\Автор \\
+		\setarstrut{\footnotesize}
+		& \footnotesize{(подпись, дата)} & \\
+		\restorearstrut
+		Руководитель ВКР & \lhrulefill{\fill} & \fillcenter\Руководитель \\
+		\setarstrut{\footnotesize}
+		& \footnotesize{(подпись, дата)} & \\
+		\restorearstrut
+		Нормоконтроль & \lhrulefill{\fill} & \fillcenter\Нормоконтроль \\
+		\setarstrut{\footnotesize}
+		& \footnotesize{(подпись, дата)} & \\
+		\restorearstrut
+	\end{tabular}
+	\vskip 2cm
+	\begin{center}
+		\textbf{Место для диска}
+	\end{center}
 }\fi

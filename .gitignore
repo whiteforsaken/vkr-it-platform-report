@@ -18,10 +18,10 @@
 *.snm
 *.vrb
 *.xdv
+*.lop
 *.lpc
 
 .DS_Store
 Thumbs.db
 
-fig_3_6_relational_model.png
 ТехЗадание.pdf

@@ -69,6 +69,41 @@ breakatwhitespace=false, % переносить строки только есл
 escapeinside={\%*}{*)}   % если нужно добавить комментарии в коде
 }
 
+\lstdefinelanguage{JavaScript}{
+	keywords={const,let,var,function,return,if,else,for,while,do,switch,case,break,continue,
+		try,catch,throw,new,class,extends,async,await,import,from,export,default,
+		true,false,null,undefined,require,module,exports},
+	keywordstyle=\color{magenta},
+	sensitive=true,
+	comment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	commentstyle=\color{codegreen},
+	stringstyle=\color{codepurple},
+	morestring=[b]',
+	morestring=[b]"
+}
+
+\lstdefinestyle{jslisting}{
+	language=JavaScript,
+	numbers=left,
+	numberstyle=\tiny\color{codegray},
+	stepnumber=1,
+	numbersep=5pt,
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	stringstyle=\color{codepurple},
+	basicstyle=\linespread{0.9}\ttfamily\footnotesize,
+	backgroundcolor=\color{white},
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	frame=single,
+	tabsize=2,
+	captionpos=t,
+	breaklines=true,
+	breakatwhitespace=false
+}
+
 \makeatletter % чтобы допускались русские комментарии в листингах
 \lst@InputCatcodes
 \def\lst@DefEC{%
